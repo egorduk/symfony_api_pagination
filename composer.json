@@ -1,0 +1,28 @@
+{
+  "name": "php-libs/pagination-bundle",
+  "type": "bundle",
+  "description": "BTC-X pagination bundle",
+
+  "autoload": {
+    "psr-0": {
+      "Btc\\PaginationBundle\\": ""
+    }
+  },
+
+  "require": {
+    "php": ">=5.4.0",
+    "symfony/symfony": "~2.4",
+    "doctrine/orm": "2.5.x-dev",
+    "doctrine/dbal": "2.5.x-dev"
+  },
+
+  "require-dev": {
+    "phpspec/phpspec": "~2.0.0"
+  },
+
+  "target-dir": "Btc/PaginationBundle",
+
+  "config": {
+    "bin-dir": "bin"
+  }
+}

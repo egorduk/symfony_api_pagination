@@ -1,0 +1,7 @@
+pagination:
+  filter:
+    limit:
+      10: 'Magpakita ng 10 bawat pahina'
+      25: 'Magpakita ng 25 bawat pahina'
+      50: 'Magpakita ng 50 bawat pahina'
+      100: 'Magpakita ng 100 bawat pahina'

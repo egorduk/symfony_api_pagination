@@ -1,0 +1,7 @@
+pagination:
+  filter:
+    limit:
+      10: 'AFFICHER 10 ÉLÉMENTS PAR PAGE'
+      25: 'AFFICHER 25 ÉLÉMENTS PAR PAGE'
+      50: 'AFFICHER 50 ÉLÉMENTS PAR PAGE'
+      100: 'AFFICHER 100 ÉLÉMENTS PAR PAGE'

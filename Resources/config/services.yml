@@ -1,0 +1,8 @@
+services:
+  paginator:
+    class: Btc\PaginationBundle\Paginator
+
+  twig_pagination:
+    class: Btc\PaginationBundle\Twig\PaginationExtension
+    tags:
+      - { name: twig.extension }

@@ -1,0 +1,15 @@
+image: php5.5
+git:
+    depth: 1
+script:
+    - composer install --prefer-source
+    - bin/phpspec run -fdot
+notify:
+    slack:
+        team: {{slackTeam}}
+        token: {{slackToken}}
+        channel: {{slackChannel}}
+        username: {{slackUsername}}
+        on_started: true
+        on_success: true
+        on_failure: true

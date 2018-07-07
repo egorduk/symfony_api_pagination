@@ -1,0 +1,17 @@
+{% trans_default_domain filter.domain %}
+
+<div class="btn-group btn-group-justified">
+    <div class="btn-group">
+        <button class="btn dropdown-toggle btn btn-default" id="filter-dropdown-{{ filter.name }}" type="button" data-toggle="dropdown">
+            {{ filter.trans(filter.active(query), true)|trans }}<span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="filter-dropdown-{{ filter.name }}">
+            {% for value in filter.options %}
+                <li role="presentation">
+                    {% set link = path(route, query|merge({(filter.name): value, "page": 1 })) %}
+                    <a role="menuitem" tabindex="-1" href="{{ link }}">{{ filter.trans(value)|trans }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

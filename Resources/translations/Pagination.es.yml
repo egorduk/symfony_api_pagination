@@ -1,0 +1,7 @@
+pagination:
+  filter:
+    limit:
+      10: 'MOSTRAR 10 POR PÁGINA'
+      25: 'MOSTRAR 25 POR PÁGINA'
+      50: 'MOSTRAR 50 POR PÁGINA'
+      100: 'MOSTRAR 100 POR PÁGINA'
